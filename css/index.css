@@ -330,44 +330,88 @@ span {
   margin: 2rem 0 3rem;
 }
 
-.skills__content {
+/*=============== SKILLS ===============*/
+.skills__container {
+  row-gap: 3.5rem;
+}
+
+.skills__title {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  column-gap: .5rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 2.5rem;
+}
+
+.skills__title i {
+  font-size: 1rem;
+  font-weight: initial;
+}
+
+.skills__info,
+.skills__data,
+.skills__blob {
+  display: grid;
+}
+
+.skills__info {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem 2rem;
 }
 
 .skills__data {
-  flex: 0 0 calc(50% - 1rem); /* This will create two columns. For three columns, use 33.33%, for four columns, use 25%, and so on. */
-  margin-bottom: 2rem;
-  background: var(--bg-color);
-  padding: 2rem;
-  border-radius: 2rem;
-  box-shadow: 0 0.1rem 0.5rem var(--shadow-color);
+  justify-content: center;
   text-align: center;
-  transition: 0.5s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.skills__data:hover {
-  transform: scale(1.05);
 }
 
 .skills__blob {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 100px;
+  background-color: var(--container-color);
+  border-radius: 3rem;
+  place-items: center;
+  margin: 0 auto;
   margin-bottom: 1rem;
+  transition: background .4s;
 }
 
-.skills__blob i {
-  font-size: 50px;
+.skills__blob img {
+  width: 40px;
 }
 
-.skills__name,
+.skills__name {
+  font-size: var(--small-font-size);
+  margin-bottom: .25rem;
+}
+
 .skills__subtitle {
-  margin-bottom: 0.5rem;
+  font-size: var(--tiny-font-size);
+  color: var(--text-color-light);
+}
+
+/* Animation skills */
+.skills__blob:hover img {
+  animation: bounce-skills .6s;
+}
+
+@keyframes bounce-skills {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translate(0);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+  80% {
+    transform: translate(0);
+  }
 }
 
 .services {
