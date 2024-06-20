@@ -336,18 +336,11 @@ span {
 }
 
 .skills__title {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  /*center text*/
   display: flex;
   justify-content: center;
-  align-items: center;
-  column-gap: .5rem;
-  font-size: var(--small-font-size);
-  font-weight: var(--font-semi-bold);
-  margin-bottom: 2.5rem;
-}
-
-.skills__title i {
-  font-size: 1rem;
-  font-weight: initial;
 }
 
 .skills__info,
