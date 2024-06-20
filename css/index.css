@@ -330,6 +330,46 @@ span {
   margin: 2rem 0 3rem;
 }
 
+.skills__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.skills__data {
+  flex: 0 0 calc(50% - 1rem); /* This will create two columns. For three columns, use 33.33%, for four columns, use 25%, and so on. */
+  margin-bottom: 2rem;
+  background: var(--bg-color);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0.1rem 0.5rem var(--shadow-color);
+  text-align: center;
+  transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills__data:hover {
+  transform: scale(1.05);
+}
+
+.skills__blob {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.skills__blob i {
+  font-size: 50px;
+}
+
+.skills__name,
+.skills__subtitle {
+  margin-bottom: 0.5rem;
+}
+
 .services {
   min-height: auto;
   padding-bottom: 10rem;
