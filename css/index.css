@@ -336,10 +336,17 @@ span {
 }
 
 .skills__title {
-  font-size: 2.5rem;
-  margin: 2rem 0;
-  display: flex;
-  justify-content: center;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.line-above::before {
+    content: "";
+    display: block;
+    border-top: 1px solid #000; /* Change color as needed */
+    width: 20%;
+    margin: 0 auto 10px; /* Adjust as needed */
 }
 
 .skills__info,
