@@ -52,7 +52,7 @@
 
         <div class="social-media">
           <a
-            href="https://www.instagram.com/_shivprasad.p_?igsh=dThuOHBvNHN6bXFz"
+            href="https://www.instagram.com/patil_shivprasad_2209"
             ><i class="bx bxl-instagram-alt"></i
           ></a>
           <a href="https://www.linkedin.com/in/shivprasad-patil-aa92bb273/"
@@ -73,18 +73,13 @@
             <h3>Web Developer</h3>
           </div>
           <div class="profession" style="--i: 1">
-            <i class="bx bx-code"></i>
+            <i class="bx bx-code-alt"></i>
             <h3>Android Developer</h3>
           </div>
           <div class="profession" style="--i: 2">
             <i class="bx bx-palette"></i>
             <h3>Web Designer</h3>
           </div>
-          <div class="profession" style="--i: 3">
-            <i class="bx bx-paint"></i>
-            <h3>Graphics Designer</h3>
-          </div>
-
           <div class="circle"></div>
         </div>
 
@@ -161,6 +156,27 @@
             </div>
             <div class="skills__data">
               <div class="skills__blob">
+                <img src="/images/logos/mongodb.png" alt="MongoDB logo">
+              </div>
+              <h3 class="skills__name">MongoDB</h3>
+              <span class="skills__subtitle">Basic</span>
+            </div>
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="/images/logos/node.png" alt="NodeJS logo">
+              </div>
+              <h3 class="skills__name">NodeJS</h3>
+              <span class="skills__subtitle">Basic</span>
+            </div>
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="/images/logos/express.png" alt="ExpressJS logo">
+              </div>
+              <h3 class="skills__name">ExpressJS</h3>
+              <span class="skills__subtitle">Basic</span>
+            </div>
+            <div class="skills__data">
+              <div class="skills__blob">
                 <img src="/images/logos/MySQL.png" alt="MySQL logo">
               </div>
               <h3 class="skills__name">MySQL</h3>
@@ -222,22 +238,11 @@
         <div class="testimonial-box mySwiper">
           <div class="testimonial-content swiper-wrapper">
             <div class="testimonial-slide swiper-slide">
-              <h3>IntelliCheck: Submission Integrity Assurance</h3>
+              <h3>Multilingual Text Summarization using NLP</h3>
               <p>
-                IntelliCheck: Submission Integrity Assurance is a system
-                designed to uphold academic integrity by detecting plagiarism in
-                student assignments. As e-learning grows, ensuring originality
-                in student work becomes challenging. IntelliCheck addresses this
-                by analyzing student submissions from various educational
-                platforms, using advanced algorithms and language understanding
-                techniques. Developed primarily in Python, it's user-friendly
-                for educators. IntelliCheck not only identifies copied work but
-                also provides insights into the originality and quality of the
-                submissions, aiding teachers in ensuring students' work is
-                authentic and of high standard. In essence, IntelliCheck is a
-                valuable tool in promoting honesty in digital education.
+                This project develops a multilingual NLP-based automated text summarization system supporting Hindi, English, and Marathi. It processes extensive textual data from domains like news, research, and social media, generating concise summaries for quick comprehension. Key features include accurate language detection, advanced translation via Google Translate, and real-time summarization. The system offers a user-friendly web interface for seamless input and output while promoting inclusivity by bridging linguistic gaps. By leveraging advanced NLP technologies, the project enhances accessibility, scalability, and efficiency in managing large volumes of textual data.
               </p><br><br><br>
-              <button type="button" class="btn" data-toggle="modal" data-target="#intelliModal">Read More</button>
+              <button type="button" class="btn" data-toggle="modal" data-target="#textSumModal">Read More</button>
             </div>
           </div>
         </div>
@@ -318,6 +323,16 @@
               Read More
             </button>
           </div>
+
+          <!-- 8 -->
+          <div class="services-box">
+            <i class='bx bxs-institution'></i>
+            <h3>IntelliCheck: Submission Integrity Assurance</h3>
+            <p>IntelliCheck: Submission Integrity Assurance is a system designed to detect plagiarism in student assignments, ensuring academic integrity in e-learning. Using advanced algorithms and language understanding techniques, it analyzes submissions from various educational platforms. Developed in Python, it is user-friendly for educators, identifying copied work and providing insights into the originality and quality of submissions. IntelliCheck promotes honesty and high standards in digital education.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#intelliModal">
+              Read More
+            </button>
+          </div>
       </div>
   </section>
 
@@ -344,7 +359,48 @@
       </div>
     </footer>
 
-    <!-- Intellicheck Modals -->
+    <!-- Text Summarization Modal-->
+    <div class="modal fade" id="textSumModal" tabindex="-1" role="dialog" aria-labelledby="textSumModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="textSumModalLabel">Multilingual Text Summarization using NLP</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <h5>Description</h5>
+            <p>This project focuses on creating a robust NLP-based automated text summarization system that supports multiple languages, specifically Hindi, English, and Marathi. The system addresses the growing challenge of processing and comprehending large volumes of textual data from various domains such as news articles, research papers, and social media posts. By generating concise and accurate summaries, the system enables users to grasp essential information quickly without the need to sift through extensive content. Key features of the system include accurate language detection, which identifies the language of the input text and routes it to the appropriate summarization model, and translation services that allow users to receive summaries in their desired language. Advanced API Google Translate ensure high-quality translations. To support real-time summarization and translation. The project also emphasizes user accessibility through a modern web interface, where users can input text and receive summaries seamlessly. By integrating advanced NLP technologies, the system not only saves time and effort but also promotes inclusivity by bridging linguistic barriers, making critical information accessible to a diverse audience. Overall, the system aims to enhance information accessibility, scalability, and user experience in managing and summarizing large textual data efficiently.</p>
+
+            <h5>Technologies Used</h5>
+            <ul>
+              <li>React</li>
+              <li>Node JS</li>
+              <li>Express JS</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>Python</li>
+              <li>MongoDB</li>
+            </ul>
+
+            <h5>Features</h5>
+            <ul>
+              <li>Supports summarization for Hindi, English, and Marathi texts.</li><br>
+              <li>Automatically detects the input text's language and routes it to the appropriate summarization model.</li><br>
+              <li>Allows users to receive summaries in their desired language using advanced APIs like Google Translate.</li><br>
+              <li>Processes and summarizes textual data from various domains, including news articles, research papers, and social media posts.</li><br>
+              <li>Ensures efficient and quick summarization and translation for immediate access to concise information.</li><br>
+              <li>User-friendly modern web interface where users can input text and receive summaries seamlessly.</li><br>
+              <li>Simplifies content processing by providing quick and accurate summaries, reducing the need to sift through extensive content.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Intellicheck Modal -->
     <div class="modal fade" id="intelliModal" tabindex="-1" role="dialog" aria-labelledby="intelliModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
